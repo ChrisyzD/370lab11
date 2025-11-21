@@ -36,8 +36,6 @@ int main(int argc, char** argv) {
         return 1;
     }
     int arr_size = atoi(argv[1]);
-    // ...
-    int arr_size = atoi(argv[1]);
     example *e = malloc(arr_size*sizeof(example));
     for(int i=0; i<arr_size; i++) {
         init_struct(&e[i]);
@@ -67,5 +65,6 @@ void access_struct(example *ex) {
     count += (int) ex->e;
     count += (int) ex->f;
 }
+
 
 
